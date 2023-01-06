@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: todo
-        image: abhishekf5/cicd-e2e:33
+        image: bharath1996/demo:7
         ports:
         - containerPort: 8000
 
