@@ -1,3 +1,5 @@
+#!/bin/bash
+
 IMAGE_TAG=\$(kubectl get deployment todo-app -n demo -o jsonpath='{\$.spec.template.spec.containers[0].image}')
 IFS=':'; arrIN=${IMAGE_TAG}; unset IFS;
 echo Current Image Version: ${arrIN[1]}
