@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: todo
-        image: bharath1996/demo:2000
+        image: bharath1996/demo:2001
         ports:
         - containerPort: 8000
 
